@@ -1,0 +1,2 @@
+rootProject.name = "GridImages_MACC"
+include ':app'

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <Button
+            android:id="@+id/btn_fullScreen"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Full View"
+            android:textColor="#333"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorOrange"/>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorRed"
+            android:textStyle="bold"
+            android:text="Close"
+            android:layout_marginStart="155dp"
+            android:textAllCaps="false"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_image_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Name"
+        android:gravity="center"
+        android:textSize="20sp"/>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_image_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher_round"/>
+</LinearLayout>
