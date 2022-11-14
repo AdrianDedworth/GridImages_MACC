@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 ItemEntity item = myImageList.get(position);
-                ShowDialogBox(item);//showDialog(position);//
+                ShowDialogBox(item);
             }
         });
         btnBuscar.setOnClickListener(new View.OnClickListener() {
@@ -78,18 +78,11 @@ public class MainActivity extends AppCompatActivity{
         ImageView imageDialog = dialog.findViewById(R.id.img_dialog);
         Button btn_fullSreen = dialog.findViewById(R.id.btn_fullScreen);
         Button btn_close = dialog.findViewById(R.id.btn_close);
-//        ImageView image_full = dialog.findViewById(R.id.img_fullScreen);
 
         user_name.setText("  " + item.getUser());
         photoLikes.setText("  " + item.getLikes());
         imageDialog.setScaleType(ImageView.ScaleType.FIT_XY);
         Glide.with(this).load(item.getImgWebURL()).into(imageDialog);
-
-        //Extracting name
-//        int index = title.indexOf("/");
-//        String name = title.substring(index+1, title.length());
-//        user_name.setText(name); // nombre de usuario que tomo la foto
-//        image.setImageResource(item_pos);
 
         btn_close.setOnClickListener(new View.OnClickListener() {
             @Override
