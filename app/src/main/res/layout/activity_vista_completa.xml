@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VistaCompleta">
+    tools:context=".VistaCompleta"
+    android:gravity="center"
+    android:background="@color/black">
 
     <ImageView
         android:id="@+id/img_fullScreen"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher_round"
         android:scaleType="fitXY"/>
 </RelativeLayout>
